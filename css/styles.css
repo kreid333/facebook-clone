@@ -127,3 +127,55 @@ header {
     top: -12px;
     right: -10px;
 }
+
+.header__account {
+    display: flex;
+}
+
+.header__actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__user-img {
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+}
+
+.header__user-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.header__circle-link {
+    background-color: var(--button-link);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    border-radius: 50%;
+    color: var(--dark-color-text);
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.header__circle-link .fa-sort-down {
+    position: relative;
+    top: -3px;
+    font-size: 1.4rem;
+}
+
+.header__link-icon {
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.header__link-icon .header__notification-bubble {
+    top: -18px;
+    right: -18px;
+}
