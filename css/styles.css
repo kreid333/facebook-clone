@@ -20,6 +20,7 @@
     --light-color-text: #606770;
     --button-link: #e0e2e8;
     --stories-bg: #090909;
+    --icon-circle-bg: linear-gradient(0deg, rgba(65, 67, 69, 1) 0%, rgba(107, 110, 114, 1) 100%);
 }
 
 body {
@@ -185,6 +186,10 @@ header {
     display: flex;
 }
 
+.sidenav {
+    width: 25%;
+}
+
 .sidenav__item {
     display: flex;
     align-items: center;
@@ -196,6 +201,8 @@ header {
     height: 40px;
     width: 40px;
     margin-right: 20px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .sidenav__item-title {
@@ -237,9 +244,11 @@ header {
 }
 
 .sidenav__item-icon--circle-white {
-    background-color: var(--fb-blue);
+    background: var(--icon-circle-bg);
     border-radius: 50%;
     font-size: 1rem;
+    width: 40px;
+    height: 40px;
 }
 
 .sidenav__item-icon .fas, .sidenav__item-icon .fab {
@@ -252,4 +261,17 @@ header {
 
 .sidenav__item-icon--circle-white .fas, .sidenav__item-icon--circle-white .fab {
     color: var(--fb-whitebg);
-} 
+}
+
+.sidenav__line {
+    height: 3px;
+    background-color: var(--button-link);
+    margin-bottom: 15px;
+}
+
+.sidenav__heading-title {
+    display: block;
+    color: var(--light-color-text);
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
