@@ -541,11 +541,19 @@ header {
 }
 
 .emoji-circle--blue {
-  background: linear-gradient(0deg, rgba(4, 60, 108, 1) 0%, rgba(10, 134, 240, 1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(4, 60, 108, 1) 0%,
+    rgba(10, 134, 240, 1) 100%
+  );
 }
 
 .emoji-circle--red {
-  background: linear-gradient(0deg, rgba(92, 15, 26, 1) 0%, rgba(238, 35, 64, 1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(92, 15, 26, 1) 0%,
+    rgba(238, 35, 64, 1) 100%
+  );
 }
 
 .emoji-circle--yellow {
@@ -635,4 +643,142 @@ header {
   right: -5px;
   font-weight: 700;
   z-index: 3;
+}
+
+.sidenav__page {
+  height: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 20px;
+  color: var(--light-color-text);
+}
+
+.sidenav__page .far,
+.sidenav__page .fas {
+  margin-right: 5px;
+}
+
+.sidenav__heading-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--light-color-text);
+}
+
+.sidenav__heading-title--margin {
+  margin-bottom: 0px;
+}
+
+.sidenav__heading-info a {
+  text-decoration: none;
+}
+
+.friendrequest {
+  display: flex;
+  justify-content: space-between;
+  color: var(--light-color-text);
+  position: relative;
+  margin-top: 10px;
+}
+
+.friendrequest img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 10px 10px 10px 0px;
+}
+
+.friendrequest__name {
+  color: var(--fb-black);
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.friendrequest__info {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.friendrequest__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.friendrequest__date {
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
+.friendrequest__btns {
+  display: flex;
+  margin-top: 5px;
+}
+
+.friendrequest__btn {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  margin-right: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.friendrequest__btn:nth-child(1) {
+  background-color: var(--fb-blue);
+  color: var(--fb-white);
+}
+
+.friendrequest__btn:nth-child(2) {
+  background-color: var(--button-link);
+  color: var(--fb-black);
+}
+
+.birthday__user {
+  display: flex;
+  align-items: center;
+}
+
+.birthday__user--gift {
+  font-size: 1.9rem;
+  margin-right: 15px;
+  color: var(--fb-blue);
+}
+
+.sidenav__contacts--icons {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--light-color-text);
+}
+
+.contact {
+  position: relative;
+  margin-top: 15px;
+}
+
+.contact__activity-dot {
+  height: 15px;
+  width: 15px;
+  background-color: var(--fb-green);
+  border: 3px solid var(--fb-bgcolor);
+  border-radius: 50%;
+  position: absolute;
+  left: 30px;
+  top: 25px;
+}
+
+.yourpages__heading {
+  margin-bottom: 15px;
+}
+
+strong {
+  font-weight: 600;
 }
